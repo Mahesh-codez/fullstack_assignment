@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #f9fafc;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar .container,
+.navbar .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.navbar {
+    background: #1e3a8a !important;
+    /* Light modern navbar */
+    padding: 10px 0;
+    height: 70px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f1f3f7 !important;
+    /* Bootstrap primary */
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: #ff9800 !important;
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.link {
+    color: #f1f3f7 !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.link:hover {
+    color: #0d6efd !important;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.container_last {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+/* About Section */
+.about_me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;                     /* balanced gap */
+  margin: 8% auto;
+  flex-wrap: wrap;
+  padding: 90px 80px;            
+  max-width: 1200px;            
+}
+
+.leftSection {
+  flex: 1 1 50%;                 
+  max-width: 550px;              
+  font-size: 2.2rem;
+  font-weight: 600;
+ color: #1e3a8a;
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+.leftSection .name {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+  /* max-width: 80%; */
+}
+
+.rightSection {
+  flex: 1 1 40%;                 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  animation: zoomIn 1.2s ease forwards;
+}
+
+.rightSection img {
+  width: 200px;                  
+  max-width: 100%;
+  /* border-radius: 50%;  */         
+  
+}
+
+/* Section Titles*/
+.section-title {
+    display: inline-block;
+    /* inline-block for hover underline width */
+    position: relative;
+    /* relative for ::after */
+    margin: 20px auto 50px auto;
+    /* center horizontally */
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+    cursor: default;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background: #facc15;
+    /* yellow underline */
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.section-title:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   Cards / Features Section
+========================= */
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card,
+.adv-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover,
+.adv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3,
+.adv-card h5 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.feature-card p,
+.adv-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* =========================
+   Tech Icons / Libraries Section
+========================= */
+.tech-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.tech i {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.tech:hover {
+    transform: translateY(-5px);
+    color: #facc15;
+}
+
+/* =========================
+   Advantages Section Grid
+========================= */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.advantages-grid .adv-card i {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Code Example / Hover Boxes
+========================= */
+.code-example {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.code-box,
+.result-box {
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.code-box pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.result-box .result-sample,
+.hover-box {
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: #4caf50;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-box:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
+
+/* =========================
+   Footer
+========================= */
+.footer {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #facc15;
+    text-decoration: none;
+}
+
+/*  Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .about_me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftSection,
+    .rightSection {
+        flex: 1 1 100%;
+    }
+
+    .section-cards,
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-icons {
+        gap: 15px;
+    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 992px) {
+  .about_me {
+    padding: 40px;
+    gap: 2.5rem;
+  }
+  .leftSection {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .leftSection .name {
+    text-align: center;
+    margin: 10px auto 0;
+  }
+  .rightSection {
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .rightSection img {
+    width: 220px;
+  }
+}

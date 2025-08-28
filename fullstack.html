@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-papkQFpXGlQsj0Y8pXjX1F3e3U+Kz6B8R2vKZ4U1psr0n0o7M0kl1V5nTzj+R/RQ+M6n5P5XKqJ4wYp+zX0vLg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="fullstack.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link link" href="html.html">HTML</a></li>
+        <li class="nav-item"><a class="nav-link link" href="fullstack.html">Fullstack</a></li>
+        <li class="nav-item"><a class="nav-link link" href="css.html">CSS</a></li>
+        <li class="nav-item"><a class="nav-link link" href="bootstrap.html">Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link link" href="javascript.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Landing -->
+  <main>
+    <section class="landing">
+      <div class="container1">
+        <h2 class="animate-slide-in">Full Stack Development</h2>
+        <p>
+          Full Stack Development is the practice of building both the front-end (what users see) and 
+          back-end (server-side logic) of a web application. A Full Stack Developer has skills in multiple 
+          layers of web technology to create complete and efficient applications.
+        </p>
+        <a href="#techstack" class="btn_btn animate-scale-in">Explore Technologies</a>
+      </div>
+    </section>
+
+     <!-- Full Stack Development Details -->
+<section id="fullstack-details" class="fullstack-details py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 animate-fade-in">What is Full Stack Development?</h2>
+    <p class="text-center mb-5">
+      Full Stack Development covers everything from designing the user interface to managing server-side logic 
+      and databases. Below are the major layers and tools used by developers.
+    </p>
+
+    <div class="row g-4">
+      <!-- Frontend Card -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100 text-center p-3 animate-bounce-in">
+          <i class="fa-solid fa-laptop-code fa-3x mb-3 text-primary"></i>
+          <h5 class="card-title">Frontend</h5>
+          <p class="card-text">HTML, CSS, JavaScript, and frameworks like React or Angular to design the user interface.</p>
+        </div>
+      </div>
+
+      <!-- Backend Card -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100 text-center p-3 animate-bounce-in">
+          <i class="fa-solid fa-server fa-3x mb-3 text-success"></i>
+          <h5 class="card-title">Backend</h5>
+          <p class="card-text">Node.js, Express, or Django handle logic, APIs, and communication between client & database.</p>
+        </div>
+      </div>
+
+      <!-- Database Card -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100 text-center p-3 animate-bounce-in">
+          <i class="fa-solid fa-database fa-3x mb-3 text-warning"></i>
+          <h5 class="card-title">Databases</h5>
+          <p class="card-text">SQL (MySQL, PostgreSQL) or NoSQL (MongoDB) store and manage data securely.</p>
+        </div>
+      </div>
+
+      <!-- Tools Card -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-sm h-100 text-center p-3 animate-bounce-in">
+          <i class="fa-solid fa-toolbox fa-3x mb-3 text-danger"></i>
+          <h5 class="card-title">Tools</h5>
+          <p class="card-text">Git, GitHub, Docker, and VS Code help with version control, collaboration, and deployment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Advantages of Full Stack Development -->
+<section id="advantages" class="advantages py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Advantages of Full Stack Development</h2>
+    <p class="text-center mb-5">
+      Full Stack Developers bring multiple benefits to projects as they understand both client-side and server-side development.
+    </p>
+
+    <div class="row g-4">
+      <!-- Advantage 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="adv-card">
+          <i class="fa-solid fa-layer-group"></i>
+          <h5>End-to-End Development</h5>
+          <p>They handle both frontend and backend, ensuring smooth communication between all layers.</p>
+        </div>
+      </div>
+
+      <!-- Advantage 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="adv-card">
+          <i class="fa-solid fa-bolt"></i>
+          <h5>Faster Development</h5>
+          <p>With skills across the stack, projects move faster without waiting for separate teams.</p>
+        </div>
+      </div>
+
+      <!-- Advantage 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="adv-card">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <h5>Cost Effective</h5>
+          <p>One developer or a small team can manage the full workflow, reducing costs.</p>
+        </div>
+      </div>
+
+      <!-- Advantage 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="adv-card">
+          <i class="fa-solid fa-people-group"></i>
+          <h5>Better Collaboration</h5>
+          <p>Full stack developers bridge gaps between designers, frontend, and backend teams.</p>
+        </div>
+      </div>
+
+      <!-- Advantage 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="adv-card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h5>Flexibility</h5>
+          <p>They can switch between different tasks, adapting to project needs quickly.</p>
+        </div>
+      </div>
+
+      <!-- Advantage 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="adv-card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h5>High Demand</h5>
+          <p>Full stack developers are always in demand due to their versatile skill set.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Live Code Editor Section -->
+
+<section id="live-code" class="live-code py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Try Your Todo App Live</h2>
+    <p class="text-center mb-4">Write HTML, CSS, and JS code below and see the output live.</p>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <h5>HTML</h5>
+        <textarea id="html-code" class="form-control" rows="15">
+<div class="container">
+  <h2>Register</h2>
+  <form action="" id="form">
+    <div class="form_control">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <small>Error message</small>
+    </div>
+
+    <div class="form_control">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter email address">
+      <small>Error message</small>
+    </div>
+
+    <div class="form_control">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+      <small>Error message</small>
+    </div>
+
+    <button type="submit" class="center_text">Submit</button>
+  </form>
+</div>
+        </textarea>
+      </div>
+
+      <div class="col-md-4">
+        <h5>CSS</h5>
+        <textarea id="css-code" class="form-control" rows="15">
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 400px;
+  margin: 60px  auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  color: white
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+   color: #fff;
+}
+.form_control {
+  margin-bottom: 15px;
+}
+.form_control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.form_control input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+small {
+  color: red;
+  visibility: hidden;
+}
+.form-control-error input {
+  border-color: red;
+}
+.form-control-error small {
+  visibility: visible;
+}
+        </textarea>
+      </div>
+
+      <div class="col-md-4">
+        <h5>JavaScript</h5>
+        <textarea id="js-code" class="form-control" rows="15">
+const form = document.getElementById("form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  if (nameInput.value.trim() === "") {
+    setError(nameInput, "Name is required");
+  }
+  if (emailInput.value.trim() === "") {
+    setError(emailInput, "Email is required");
+  }
+  if (passwordInput.value.trim() === "") {
+    setError(passwordInput, "Password is required");
+  }
+});
+
+function setError(input, message) {
+  const formControl = input.parentElement;
+  formControl.classList.add("form-control-error");
+  const small = formControl.querySelector("small");
+  small.textContent = message;
+}
+        </textarea>
+      </div>
+    </div>
+
+    <!-- OUTPUT FRAME -->
+    <div class="mt-4">
+      <h5>Output:</h5>
+      <iframe id="output-frame" style="width:80%; height:90vh; border:1px solid #ccc; border-radius:8px;"></iframe>
+    </div>
+  </div>
+</section>
+
+<script>
+  const htmlCode = document.getElementById("html-code");
+  const cssCode = document.getElementById("css-code");
+  const jsCode = document.getElementById("js-code");
+  const outputFrame = document.getElementById("output-frame");
+
+  function runCode() {
+    const frameDoc = outputFrame.contentDocument || outputFrame.contentWindow.document;
+    frameDoc.open();
+    frameDoc.write(`
+      <html>
+        <head>
+          <style>${cssCode.value}</style>
+        </head>
+        <body>
+          ${htmlCode.value}
+          <script>
+            ${jsCode.value}
+          <\/script>
+        </body>
+      </html>
+    `);
+    frameDoc.close();
+  }
+
+  htmlCode.addEventListener("input", runCode);
+  cssCode.addEventListener("input", runCode);
+  jsCode.addEventListener("input", runCode);
+
+  runCode(); // run initially
+</script>
+
+
+    <!-- Tech Stack -->
+    <section id="techstack" class="techstack">
+      <div class="container_last">
+        <h2 class="animate-fade-in">Core Technologies</h2>
+        <p>Click on any technology below to learn more:</p>
+        <div class="tech-icons">
+          <a href="html.html" class="tech animate-bounce-in">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+          </a>
+          <a href="css.html" class="tech animate-bounce-in">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+          </a>
+          <a href="javascript.html" class="tech animate-bounce-in">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </a>
+          <a href="bootstrap.html" class="tech animate-bounce-in">
+            <i class="fa-brands fa-bootstrap"></i>
+            <span>Bootstrap</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+   
+    
+  <div class="footer-container">
+    <h4 class="footer-heading">Get in Touch</h4>
+    <p>Email: <a href="mailto:mahesh@example.com" class="footer-link">mahesh@example.com</a></p>
+    <p>&copy; 2025 Full Stack Development | Designed by You</p>
+  </div>
+</footer>
+
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

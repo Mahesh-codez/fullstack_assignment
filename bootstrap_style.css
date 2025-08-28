@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #f9fafc;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.container_last {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* =========================
+   Navbar
+========================= */
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #1e3a8a;
+}
+
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #facc15;
+    transform: scale(1.05);
+}
+
+/* =========================
+   Landing / About Section
+========================= */
+.about_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 120px 0 80px 0;
+    flex-wrap: wrap;
+    animation: fadeSlideIn 1s ease forwards;
+}
+
+.leftSection {
+    flex: 1 1 50%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.leftSection .name p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.rightSection {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSection img {
+    width: 200px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.rightSection img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   Section Titles
+========================= */
+.section-title {
+    display: inline-block;
+    position: relative;
+    margin: 20px auto 50px auto;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+    cursor: default;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background: #facc15;
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.section-title:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   Cards / Features Section
+========================= */
+.section-cards, .advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card, .adv-card, .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideIn 0.8s ease forwards;
+}
+
+.feature-card:hover, .adv-card:hover, .card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   Tech Icons / Utilities Section
+========================= */
+.tech-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.tech i {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.tech:hover {
+    transform: translateY(-5px);
+    color: #facc15;
+}
+
+/* =========================
+   Buttons / Hover Boxes
+========================= */
+.btn, .hover-box {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.hover-box {
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: #4caf50;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hover-box:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
+
+/* =========================
+   Code Boxes
+========================= */
+/* =========================
+   Card Styling
+========================= */
+.example-card {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 18rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.example-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.example-card .btn {
+  margin-top: 10px;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.example-card .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* =========================
+   Modal Styling
+========================= */
+.modal-gradient-header {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-content {
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.modal-body {
+  padding: 25px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.modal-footer .btn {
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.modal-footer .btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+
+/* Footer */
+.footer {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #facc15;
+    text-decoration: none;
+}
+
+/*Animations
+*/
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeSlideIn {
+    0% { opacity: 0; transform: translateY(30px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+/* =========================
+   Responsive
+========================= */
+@media screen and (max-width: 768px) {
+    .about_me {
+        flex-direction: column;
+        text-align: center;
+    }
+    .leftSection, .rightSection {
+        flex: 1 1 100%;
+    }
+    .section-cards, .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    .tech-icons {
+        gap: 15px;
+    }
+}

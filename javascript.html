@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="javascript_style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link link" href="html.html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link link" href="fullstack.html">Fullstack</a></li>
+          <li class="nav-item"><a class="nav-link link" href="css.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link link" href="bootstrap.html">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link link" href="javascript.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+   
+  <section class="about_me">
+    <div class="leftSection">
+      Javascript
+
+      <div class="name">
+         <p>JavaScript (JS) is a versatile programming language primarily used for web development. It allows developers
+          to create dynamic, interactive web pages, manipulate HTML & CSS, and build server-side applications with Node.js.</p>
+      </div>
+    </div>
+    <div class="rightSection">
+      <img src="images/javascript.webp" alt="">
+    </div>
+  </section>
+
+  <!-- JS Basics Section -->
+  <section class="fullstack-details container_last">
+    <h2 class="section-title">JavaScript Basics</h2>
+    <div class="section-cards">
+      <div class="feature-card">
+        <h3>Variables</h3>
+        <p>Used to store data values. Examples: <code>let</code>, <code>const</code>, <code>var</code>.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Data Types</h3>
+        <p>Common types: string, number, boolean, object, array, null, undefined.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Functions</h3>
+        <p>Reusable blocks of code. Example: <code>function greet() { console.log("Hello!"); }</code></p>
+      </div>
+      <div class="feature-card">
+        <h3>Conditionals</h3>
+        <p>Control flow using <code>if</code>, <code>else if</code>, <code>else</code>, and <code>switch</code>.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Loops</h3>
+        <p>Repeat code using <code>for</code>, <code>while</code>, and <code>for...of</code>.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Events</h3>
+        <p>Handle user interactions like clicks and keyboard input using event listeners.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS Libraries Section -->
+  <section class="techstack container_last">
+    <h2 class="section-title">JavaScript Libraries</h2>
+    <div class="tech-icons">
+      <a href="https://jquery.com/" target="_blank" class="tech"><i class="fa-brands fa-js"></i><span>jQuery</span></a>
+      <a href="https://react.dev" target="_blank" class="tech"><i class="fa-brands fa-react"></i><span>React</span></a>
+      <a href="https://vuejs.org/" target="_blank" class="tech"><i class="fa-brands fa-vuejs"></i><span>Vue</span></a>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages container_last">
+    <h2 class="section-title">Advantages of JavaScript</h2>
+    <div class="advantages-grid">
+      <div class="adv-card"><i class="fa-solid fa-bolt"></i>
+        <h5>Interactive Websites</h5>
+        <p>Enables dynamic content and responsive user interactions.</p>
+      </div>
+      <div class="adv-card"><i class="fa-solid fa-server"></i>
+        <h5>Fullstack Development</h5>
+        <p>With Node.js, JS can be used both on client and server-side.</p>
+      </div>
+      <div class="adv-card"><i class="fa-solid fa-mobile-screen-button"></i>
+        <h5>Cross-platform</h5>
+        <p>Works across browsers, desktops, and mobile platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS Example Section -->
+  <section class="container_last">
+    <h2 class="section-title">JavaScript Example</h2>
+    <div class="code-example">
+      <div class="code-box">
+        <pre>
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet("Developer"));
+        </pre>
+      </div>
+      <div class="result-box">
+        <div class="result-sample">Hello, Developer!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS Event Example Section -->
+  <section class="container_last">
+  <h2 class="section-title">JavaScript Event Example</h2>
+  <div class="code-example hover-effect-example">
+    <!-- Left: Code -->
+    <div class="code-box">
+      <pre>
+document.getElementById("clickBtn").addEventListener("click", function() {
+  alert("Button clicked!");
+});
+      </pre>
+    </div>
+    <!-- Right: Result -->
+    <div class="result-box">
+      <button id="clickBtn" class="hover-box">Click Me!</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Ensures DOM is loaded before binding event
+  document.getElementById("clickBtn").addEventListener("click", function() {
+    alert("Button clicked!");
+  });
+</script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <h3 class="footer-heading">Get in Touch</h3>
+      <p>Email: <a href="mailto:yourname@example.com" class="footer-link">yourname@example.com</a></p>
+      <p>&copy; 2025 JavaScript Portfolio | Designed by You</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS for Demo -->
+  <script>
+    const result = document.querySelector('.result-sample');
+    console.log(result.textContent);
+  </script>
+</body>
+
+</html>

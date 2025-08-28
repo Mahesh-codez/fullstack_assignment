@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style_css.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link link" href="html.html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link link" href="fullstack.html">Fullstack</a></li>
+          <li class="nav-item"><a class="nav-link link" href="css.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link link" href="bootstrap.html">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link link" href="javascript.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+
+  <section class="about_me">
+    <div class="leftSection">
+      CSS
+
+      <div class="name">
+        <p>CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation of web pages. It
+          defines how HTML elements should be displayed, including layout, colors, and animations. </p>
+      </div>
+    </div>
+    <div class="rightSection">
+      <img src="images/css-3.png" alt="">
+    </div>
+  </section>
+
+
+
+  <!-- CSS Properties Section -->
+  <section class="fullstack-details container_last">
+    <h2 class="section-title">CSS Properties</h2>
+    <div class="section-cards">
+      <div class="feature-card">
+        <h3>display</h3>
+        <p>Controls how elements are rendered on the page. Examples: block, inline, flex, grid.</p>
+      </div>
+      <div class="feature-card">
+        <h3>color & background-color</h3>
+        <p>Sets text and background colors. Supports hex, RGB, and named colors.</p>
+      </div>
+      <div class="feature-card">
+        <h3>font-size & font-family</h3>
+        <p>Adjusts text size and font type for readability and style.</p>
+      </div>
+      <div class="feature-card">
+        <h3>padding & margin</h3>
+        <p>Padding adds space inside the element; margin adds space outside.</p>
+      </div>
+      <div class="feature-card">
+        <h3>border & border-radius</h3>
+        <p>Defines border style, thickness, and rounded corners for design effects.</p>
+      </div>
+      <div class="feature-card">
+        <h3>transition & transform</h3>
+        <p>Used for animations, hover effects, and smooth transformations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSS Frameworks Section -->
+  <section class="techstack container_last">
+    <h2 class="section-title">CSS Frameworks</h2>
+    <div class="tech-icons">
+      <a href="https://tailwindcss.com" target="_blank" class="tech"><i
+          class="fa-solid fa-wind"></i><span>Tailwind</span></a>
+      <a href="https://getbootstrap.com" target="_blank" class="tech"><i
+          class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></a>
+      <a href="https://bulma.io" target="_blank" class="tech"><i class="fa-solid fa-cube"></i><span>Bulma</span></a>
+    </div>
+  </section>
+
+  <!-- Advantages Section -->
+  <section class="advantages container_last">
+    <h2 class="section-title">Advantages of CSS</h2>
+    <div class="advantages-grid">
+      <div class="adv-card"><i class="fa-solid fa-clock"></i>
+        <h5>Efficiency</h5>
+        <p>Apply a single style sheet to multiple pages, making changes quick and consistent.</p>
+      </div>
+      <div class="adv-card"><i class="fa-solid fa-gear"></i>
+        <h5>Maintainability</h5>
+        <p>Separating HTML from CSS results in clean, organized, and easier-to-maintain code.</p>
+      </div>
+      <div class="adv-card"><i class="fa-solid fa-mobile-screen-button"></i>
+        <h5>Responsive Design</h5>
+        <p>CSS allows websites to adapt to any screen size for optimal viewing on all devices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Example Section -->
+  <section class="container_last">
+    <h2 class="section-title">CSS Example</h2>
+    <div class="code-example">
+      <div class="code-box">
+        <pre>
+.box {
+  background: #ffd43b;
+  color: #333;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+</pre>
+      </div>
+      <div class="result-box">
+        <div class="result-sample">Hello CSS!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSS Hover Effect Example Section -->
+<section class="container_last">
+  <h2 class="section-title">CSS Hover Effect Example</h2>
+  <div class="code-example hover-effect-example">
+    <!-- Left: Code -->
+    <div class="code-box">
+      <pre>
+.hover-box {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-box:hover {
+  background-color: #ff5722;
+  transform: scale(1.1);
+}
+      </pre>
+    </div>
+    <!-- Right: Effect -->
+    <div class="result-box">
+      <div class="hover-box">Hover Me!</div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <h3 class="footer-heading">Get in Touch</h3>
+      <p>Email: <a href="mailto:yourname@example.com" class="footer-link">yourname@example.com</a></p>
+      <p>&copy; 2025 CSS Portfolio | Designed by You</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
