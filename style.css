@@ -27,6 +27,26 @@ body {
 }
 
 
+.navbar-collapse {
+    background-color: #1e3a8a ;
+
+}
+
+.navbar-collapse .nav-link {
+    color: #fff; /* Link color inside dropdown */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar-collapse .nav-link:hover {
+    background-color: #1e3a8a  /* Hover color inside dropdown */
+    /* color: #fff; */
+}
+
+.navbar-collapse {
+  
+    border-radius:  10px ;
+}
 .navbar {
     background: #1e3a8a !important;
     /* Light modern navbar */
@@ -38,7 +58,7 @@ body {
 .navbar-brand {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #f1f3f7 !important;
+    color: white !important;
     /* Bootstrap primary */
     letter-spacing: 1px;
 }
@@ -71,7 +91,7 @@ body {
 }
 
 .link:hover {
-    color: #0d6efd !important;
+    color: #fdbd0d !important;
 }
 
 .link:hover::after {
@@ -455,10 +475,67 @@ body {
 }
 
 /* Footer */
-footer {
-    background: #f8f9fa;
-    color: #555;
-    padding: 15px;
-    margin-top: 50px;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+.footer {
+    background: #1e3a8a;
+    color: #fff;
+    margin-top: 70px;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-heading::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #facc15;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #facc15;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-link i {
+    font-size: 1.2rem;
+}
+
+.footer-link:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
 }
